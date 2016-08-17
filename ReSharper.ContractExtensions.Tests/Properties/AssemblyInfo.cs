@@ -51,6 +51,8 @@ using ReSharper.ContractExtensions.ContextActions.Requires;
 [assembly: TestDataPathBase(@".\test\data")]
 #pragma warning restore 618
 
+// See https://groups.google.com/forum/#!topic/resharper-plugins/BWEMUBL2yQI
+[assembly: RequiresSTA]
 
 [ZoneDefinition]
 public class IExtensionTestEnvironmentZone : ITestsZone, IRequire<PsiFeatureTestZone>

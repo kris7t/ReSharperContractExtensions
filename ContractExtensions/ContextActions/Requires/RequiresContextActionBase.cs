@@ -85,9 +85,10 @@ namespace ReSharper.ContractExtensions.ContextActions.Requires
             var actions = contextActions[0].CreateBulbItemsBase();
             var anchor = actions[0].Anchor;
 
-            var subMenuAnchor = new ExecutableGroupAnchor(
+            var subMenuAnchor = new SubmenuAnchor(
                 anchor,
-                IntentionsAnchors.ContextActionsAnchorPosition);
+                SubmenuBehavior.Executable,
+                IntentionsAnchors.ContextActionsAnchor.Position);
 
             return contextActions.Select(
                 n => new IntentionAction(n, n.Text, BulbThemedIcons.ContextAction.Id, subMenuAnchor));

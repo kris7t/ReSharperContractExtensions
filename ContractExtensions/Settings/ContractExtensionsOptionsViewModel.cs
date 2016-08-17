@@ -5,8 +5,8 @@ using System.Windows.Input;
 using JetBrains.Annotations;
 using JetBrains.Application.Settings;
 using JetBrains.Application.Settings.Store;
+using JetBrains.Application.UI.Commands;
 using JetBrains.DataFlow;
-using JetBrains.UI.Extensions.Commands;
 using JetBrains.UI.Options;
 
 namespace ReSharper.ContractExtensions.Settings
